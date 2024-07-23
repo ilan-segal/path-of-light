@@ -35,8 +35,10 @@
   },
   "name":"PathOfLight",
   "resources":[
+    {"id":{"name":"obj_player_aim_arrow","path":"objects/obj_player_aim_arrow/obj_player_aim_arrow.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_player_aim_arrow","path":"sprites/spr_player_aim_arrow/spr_player_aim_arrow.yy",},},
     {"id":{"name":"spr_player_idle_back","path":"sprites/spr_player_idle_back/spr_player_idle_back.yy",},},
     {"id":{"name":"spr_player_idle_front","path":"sprites/spr_player_idle_front/spr_player_idle_front.yy",},},
     {"id":{"name":"spr_player_idle_left","path":"sprites/spr_player_idle_left/spr_player_idle_left.yy",},},
