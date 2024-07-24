@@ -7,3 +7,6 @@ x += _actual_movement_speed * obj_player.move_x;
 y += _actual_movement_speed * obj_player.move_y;
 
 obj_player.attack_angle = point_direction(x, y, mouse_x, mouse_y);
+
+obj_player_aim_arrow.x = x;
+obj_player_aim_arrow.y = y;

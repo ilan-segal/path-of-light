@@ -1,0 +1,1 @@
+image_angle = obj_player.attack_angle;
