@@ -4,7 +4,7 @@ yspeed_ = lengthdir_y(10 * kb_multiplier, _dir);
 
 if(invuln_time == 0)
 {
-	enemy_health -= 3;
+	enemy_health -= obj_player.atk_damage;
 	
 	invuln_time = 30;
 	
