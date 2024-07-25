@@ -48,7 +48,7 @@
     {"id":{"name":"obj_altar_indicator","path":"objects/obj_altar_indicator/obj_altar_indicator.yy",},},
     {"id":{"name":"obj_altar_walls","path":"objects/obj_altar_walls/obj_altar_walls.yy",},},
     {"id":{"name":"obj_altar","path":"objects/obj_altar/obj_altar.yy",},},
-    {"id":{"name":"obj_Enemy1","path":"objects/obj_Enemy1/obj_Enemy1.yy",},},
+    {"id":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},},
     {"id":{"name":"obj_generic_attack","path":"objects/obj_generic_attack/obj_generic_attack.yy",},},
     {"id":{"name":"obj_Hotbar","path":"objects/obj_Hotbar/obj_Hotbar.yy",},},
     {"id":{"name":"obj_parent_attack","path":"objects/obj_parent_attack/obj_parent_attack.yy",},},

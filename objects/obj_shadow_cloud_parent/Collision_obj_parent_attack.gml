@@ -40,7 +40,7 @@ if(spawnChance <= 15)
 	/// @DnDArgument : "ypos_relative" "1"
 	/// @DnDArgument : "objectid" "obj_Enemy1"
 	/// @DnDSaveInfo : "objectid" "obj_Enemy1"
-	instance_create_layer(x + 0, y + 0, "Instances", obj_Enemy1);
+	instance_create_layer(x + 0, y + 0, "Instances", obj_enemy1);
 
 	/// @DnDAction : YoYo Games.Instances.Sprite_Scale
 	/// @DnDVersion : 1
@@ -49,7 +49,7 @@ if(spawnChance <= 15)
 	/// @DnDParent : 3D5717E6
 	/// @DnDArgument : "xscale" "2.667"
 	/// @DnDArgument : "yscale" "2.667"
-	with(obj_Enemy1) {
+	with(obj_enemy1) {
 	image_xscale = 2.667;
 	image_yscale = 2.667;
 	}
