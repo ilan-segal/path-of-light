@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Hotbar",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_Enemy1",
+  "eventList":[],
   "managed":true,
-  "name":"obj_Hotbar",
+  "name":"obj_Enemy1",
   "overriddenProperties":[],
   "parent":{
-    "name":"HUD",
-    "path":"folders/Objects/HUD.yy",
+    "name":"Enemies",
+    "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Hotbar",
-    "path":"sprites/spr_Hotbar/spr_Hotbar.yy",
+    "name":"spr_Enemy1_down",
+    "path":"sprites/spr_Enemy1_down/spr_Enemy1_down.yy",
   },
   "spriteMaskId":null,
   "visible":true,
