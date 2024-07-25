@@ -32,6 +32,7 @@
     {"$GMObjectProperty":"v1","%Name":"min_scale","filters":[],"listItems":[],"multiselect":false,"name":"min_scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"max_scale","filters":[],"listItems":[],"multiselect":false,"name":"max_scale","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3.5","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"size_wiggle_chance_per_frame","filters":[],"listItems":[],"multiselect":false,"name":"size_wiggle_chance_per_frame","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.01","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"sanity_damage_per_frame","filters":[],"listItems":[],"multiselect":false,"name":"sanity_damage_per_frame","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
