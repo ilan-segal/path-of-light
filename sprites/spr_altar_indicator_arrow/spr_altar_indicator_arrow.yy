@@ -19,6 +19,7 @@
   "height":64,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"55cbe4c6-2c13-4130-bf0a-6581930892db","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"55cbe4c6-2c13-4130-bf0a-6581930892db","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"5bf2053f-b511-40e2-980f-acc406e56f24","blendMode":0,"displayName":"default","isLocked":false,"name":"5bf2053f-b511-40e2-980f-acc406e56f24","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_altar_indicator_arrow",
