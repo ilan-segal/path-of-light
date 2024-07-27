@@ -3,19 +3,36 @@ if (!obj_pause.pause)
 	return;
 }
 
-if (hovered)
+if (hovered && !is_disabled)
 {
-	draw_sprite_ext(
-		spr_square,
-		1,
-		get_left() - (get_width() / 2),
-		get_top() - (get_height() / 2),
-		get_width() * scale,
-		get_height() * scale,
-		0,
-		c_white,
-		0.5
-	);
+	if (circular_frame)
+	{
+		draw_sprite_ext(
+			spr_circle,
+			1,
+			x, y,
+			get_width() * scale / sprite_get_width(spr_circle),
+			get_height() * scale / sprite_get_height(spr_circle),
+			0,
+			c_white,
+			0.5
+		);
+	}
+	else
+	{
+		draw_sprite_ext(
+			spr_square,
+			1,
+			get_left() - (get_width() / 2),
+			get_top() - (get_height() / 2),
+			get_width() * scale,
+			get_height() * scale,
+			0,
+			c_white,
+			0.5
+		);
+	}
+
 }
 
 var _colour = is_disabled ? #202020 : c_white;
