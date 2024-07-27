@@ -1,0 +1,1 @@
+selection_index = (selection_index + 1) % 4;
