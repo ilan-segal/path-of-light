@@ -8,5 +8,5 @@ event_inherited();
 /// @DnDHash : 434A0482
 /// @DnDArgument : "expr" "1"
 /// @DnDArgument : "expr_relative" "1"
-/// @DnDArgument : "var" "obj_player.bone_dust_count"
-obj_player.bone_dust_count += 1;
+/// @DnDArgument : "var" "global.inventory_bone_dust_count"
+global.inventory_bone_dust_count += 1;

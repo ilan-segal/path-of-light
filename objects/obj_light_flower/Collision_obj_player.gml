@@ -8,5 +8,5 @@ event_inherited();
 /// @DnDHash : 0F43F1E6
 /// @DnDArgument : "expr" "1"
 /// @DnDArgument : "expr_relative" "1"
-/// @DnDArgument : "var" "obj_player.light_flower_count"
-obj_player.light_flower_count += 1;
+/// @DnDArgument : "var" "global.inventory_light_flower_count"
+global.inventory_light_flower_count += 1;

@@ -29,7 +29,7 @@ if (keyboard_check_pressed(ord("E")))
 		
 		pause_surf = surface_create(res_w, res_h);
 		surface_set_target(pause_surf);
-		draw_surface(application_surface, 0, 0);
+		draw_surface_ext(application_surface, 0, 0, 1, 1, 0, #202020, 1); // Draw it darker
 		surface_reset_target();
 	
 		if (buffer_exists(pause_surf_buffer))

@@ -8,5 +8,5 @@ event_inherited();
 /// @DnDHash : 6DA686CE
 /// @DnDArgument : "expr" "1"
 /// @DnDArgument : "expr_relative" "1"
-/// @DnDArgument : "var" "obj_player.shadow_essence_count"
-obj_player.shadow_essence_count += 1;
+/// @DnDArgument : "var" "global.inventory_shadow_essence_count"
+global.inventory_shadow_essence_count += 1;
