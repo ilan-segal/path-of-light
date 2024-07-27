@@ -12,13 +12,11 @@ var _sprites = [
 	spr_alchemists_fire,
 	spr_bottled_light,
 	spr_clarity_tincture,
-	spr_brightflame_oil,
 ];
 var _amounts = [
 	global.inventory_alchemists_fire_count,
 	global.inventory_bottled_light_count,
 	global.inventory_clarity_tincture_count,
-	global.inventory_brightflame_oil_count,
 ];
 for (var _i = 0; _i < array_length(_sprites); _i++)
 {
@@ -26,7 +24,7 @@ for (var _i = 0; _i < array_length(_sprites); _i++)
 	var _cur_amount = _amounts[_i];
 	var _colour = _cur_amount <= 0 ? #202020 : c_white;
 	
-	var _cur_x = _x_pos + (4 + _item_frame_width / 2 + _i * (_item_spacing + _item_frame_width)) * global.ui_scale;
+	var _cur_x = _x_pos + (4 + _item_frame_width / 2 + (_i + 1) * (_item_spacing + _item_frame_width)) * global.ui_scale;
 	var _cur_y = _y_pos + (4 + _item_frame_width / 2) * global.ui_scale;
 	
 	draw_sprite_ext(
