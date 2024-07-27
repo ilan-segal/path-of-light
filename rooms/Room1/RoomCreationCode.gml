@@ -1,3 +1,4 @@
+global.ui_scale = 3;
 
 global.inventory_bone_dust_count = 0;
 global.inventory_light_flower_count = 0;
