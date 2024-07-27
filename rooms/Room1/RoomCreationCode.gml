@@ -42,21 +42,10 @@ for (var _radius = _minimum_radius; _radius < _maximum_radius; _radius += _radiu
 	
 }
 
-/*
-for (var _cur_y = (room_height / 2) % _darkness_distance; _cur_y < room_height; _cur_y += _darkness_distance) {
-	for (var _cur_x = (room_width / 2) % _darkness_distance; _cur_x < room_width; _cur_x += _darkness_distance) {
-		
-		if (point_distance(_cur_x, _cur_y, obj_player.x, obj_player.y) <= _safe_zone_radius) continue;
-		
-		var _spawn_x = _cur_x + random_range(-_random_offset, _random_offset);
-		var _spawn_y = _cur_y + random_range(-_random_offset, _random_offset);
-		
-		switch (irandom(2)) {
-			case 0: instance_create_layer(_spawn_x, _spawn_y, "Instances", obj_shadow_cloud_0); break;
-			case 1: instance_create_layer(_spawn_x, _spawn_y, "Instances", obj_shadow_cloud_1); break;
-			case 2: instance_create_layer(_spawn_x, _spawn_y, "Instances", obj_shadow_cloud_2); break;
-		}
-		
-	}
+var _num_flowers = 50;
+for (var _i = 0; _i < _num_flowers; _i++)
+{
+	var _x = random(room_width);
+	var _y = random(room_height);
+	instance_create_layer(_x, _y, "Instances", obj_light_flower);
 }
-*/
