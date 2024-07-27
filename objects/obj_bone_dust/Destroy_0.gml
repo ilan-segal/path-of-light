@@ -1,0 +1,1 @@
+effect_create_above(4, x + 0, y + 0, 0, $FFC6F8FF & $ffffff);

@@ -1,3 +1,5 @@
+instance_create_layer(0, 0, "Instances", obj_pause);
+
 obj_player.x = room_width / 2;
 obj_player.y = room_height / 2;
 
@@ -48,4 +50,12 @@ for (var _i = 0; _i < _num_flowers; _i++)
 	var _x = random(room_width);
 	var _y = random(room_height);
 	instance_create_layer(_x, _y, "Instances", obj_light_flower);
+}
+
+var _num_skulls = 50;
+for (var _i = 0; _i < _num_skulls; _i++)
+{
+	var _x = random(room_width);
+	var _y = random(room_height);
+	instance_create_layer(_x, _y, "Instances", obj_skull);
 }

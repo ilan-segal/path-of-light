@@ -7,8 +7,8 @@ instance_destroy();
 /// @DnDVersion : 1
 /// @DnDHash : 79842B18
 /// @DnDArgument : "var" "obj_altar.is_activated"
-/// @DnDArgument : "value" "tru"
-if(obj_altar.is_activated == true)
+/// @DnDArgument : "value" "false"
+if(obj_altar.is_activated == false)
 {
 	/// @DnDAction : YoYo Games.Particles.Effect
 	/// @DnDVersion : 1
@@ -48,8 +48,10 @@ if(obj_altar.is_activated == true)
 		/// @DnDParent : 3D5717E6
 		/// @DnDArgument : "xpos_relative" "1"
 		/// @DnDArgument : "ypos_relative" "1"
-		/// @DnDArgument : "objectid" "obj_Enemy1"
-		instance_create_layer(x + 0, y + 0, "Instances", obj_Enemy1);
+		/// @DnDArgument : "var" "obj_Enemy1"
+		/// @DnDArgument : "objectid" "obj_enemy1"
+		/// @DnDSaveInfo : "objectid" "obj_enemy1"
+		obj_Enemy1 = instance_create_layer(x + 0, y + 0, "Instances", obj_enemy1);
 	
 		/// @DnDAction : YoYo Games.Instances.Sprite_Scale
 		/// @DnDVersion : 1
