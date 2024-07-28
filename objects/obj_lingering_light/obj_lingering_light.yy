@@ -48,5 +48,5 @@
     "path":"sprites/spr_circle_hollow/spr_circle_hollow.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

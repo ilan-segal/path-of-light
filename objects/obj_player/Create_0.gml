@@ -1,11 +1,25 @@
 function swing_torch()
 {
 	if (instance_exists(obj_torch_attack)) return;
+	
+	var _offset = 20;
+	var _angle_rad = -degtorad(attack_angle);
+	var _atk_x = x + _offset * cos(_angle_rad);
+	var _atk_y = y + _offset * sin(_angle_rad);
 
-	var _generic_attack = instance_create_layer(x, y, "ForegroundInstances", obj_torch_attack);
+	var _generic_attack = instance_create_layer(
+		_atk_x,
+		_atk_y,
+		"ForegroundInstances",
+		obj_torch_attack,
+		{
+			offset_x: _offset * cos(_angle_rad),
+			offset_y: _offset * sin(_angle_rad),
+		}
+	);
 	_generic_attack.image_angle = attack_angle;
-	_generic_attack.image_xscale = image_xscale;
-	_generic_attack.image_yscale = image_yscale;
+	_generic_attack.image_xscale = image_xscale * torch_size_multiplier;
+	_generic_attack.image_yscale = image_yscale * torch_size_multiplier;
 	if (attack_angle < 270 && attack_angle > 90)
 	{
 		_generic_attack.image_yscale *= -1;
@@ -69,5 +83,11 @@ function consume_clarity_tincture()
 
 function consume_brightflame_oil()
 {
-	// TODO
+	if (torch_upgrades_count >= maximum_torch_upgrades) return;
+	
+	attack_damage += torch_damage_upgrade;
+	torch_size_multiplier += torch_size_multiplier_upgrade;
+	torch_upgrades_count++;
+	
+	play_sound(snd_brightflame_oil);
 }

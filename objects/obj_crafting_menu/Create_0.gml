@@ -51,6 +51,14 @@ function item_is_in_crafting_circle(_sprite)
 	return false;
 }
 
+function is_full_on_upgrades()
+{
+	instance_activate_object(obj_player);
+	var _result = obj_player.maximum_torch_upgrades <= obj_player.torch_upgrades_count;
+	instance_deactivate_object(obj_player);
+	return _result;
+}
+
 bone_dust_item = instance_create_layer(
 	get_box_x(0),
 	get_box_y(0),

@@ -6,7 +6,6 @@ global.inventory_shadow_essence_count = 99;
 
 global.inventory_alchemists_fire_count = 99;
 global.inventory_bottled_light_count = 99;
-global.inventory_brightflame_oil_count = 99;
 global.inventory_clarity_tincture_count = 99;
 
 instance_create_layer(0, 0, "Instances", obj_pause);

@@ -40,31 +40,36 @@ for (var _i = 0; _i < array_length(craft_items); _i++)
 
 if (recipe_result_item != noone && recipe_result_item.clicked)
 {
-	// Consume one of each item in crafting recipe
-	for (var _i = 0; _i < array_length(craft_items); _i++)
+	
+	if (!recipe_result_item.is_disabled)
 	{
-		if (craft_items[_i] == noone) continue;
+		_recipe_changed = true;
+	
+		// Consume one of each item in crafting recipe
+		for (var _i = 0; _i < array_length(craft_items); _i++)
+		{
+			if (craft_items[_i] == noone) continue;
 		
-		var _depleted = false;
+			var _depleted = false;
 		
-		if (craft_items[_i].sprite == spr_bone_dust)
-		{
-			_depleted = --global.inventory_bone_dust_count == 0;
-		}
-		else if (craft_items[_i].sprite == spr_light_flower_no_glow)
-		{
-			_depleted = --global.inventory_light_flower_count == 0;
-		}
-		else if (craft_items[_i].sprite == spr_shadow_essence)
-		{
-			_depleted = --global.inventory_shadow_essence_count == 0;
-		}
+			if (craft_items[_i].sprite == spr_bone_dust)
+			{
+				_depleted = --global.inventory_bone_dust_count == 0;
+			}
+			else if (craft_items[_i].sprite == spr_light_flower_no_glow)
+			{
+				_depleted = --global.inventory_light_flower_count == 0;
+			}
+			else if (craft_items[_i].sprite == spr_shadow_essence)
+			{
+				_depleted = --global.inventory_shadow_essence_count == 0;
+			}
 		
-		if (_depleted)
-		{
-			instance_destroy(craft_items[_i]);
-			craft_items[_i] = noone;
-			_recipe_changed = true;
+			if (_depleted)
+			{
+				instance_destroy(craft_items[_i]);
+				craft_items[_i] = noone;
+			}
 		}
 	}
 	
@@ -78,7 +83,28 @@ if (recipe_result_item != noone && recipe_result_item.clicked)
 	}
 	else if (recipe_result_item.sprite == spr_brightflame_oil)
 	{
-		global.inventory_brightflame_oil_count++;
+		instance_activate_object(obj_player);
+		obj_player.consume_brightflame_oil();
+		instance_deactivate_object(obj_player);
+		
+		if (recipe_result_item.is_disabled)
+		{
+			popup_text(
+				window_mouse_get_x(),
+				window_mouse_get_y(),
+				"Upgrade limit reached!",
+				c_red,
+			)
+		}
+		else
+		{
+			popup_text(
+				window_mouse_get_x(),
+				window_mouse_get_y(),
+				"+Damage +Attack Size",
+				c_lime,
+			)
+		}
 	}
 	else if (recipe_result_item.sprite == spr_clarity_tincture)
 	{
@@ -101,10 +127,12 @@ if (_recipe_changed)
 	// Placeholder sprite. If you see this in the game, someone messed up.
 	var _spr_result = spr_circle;
 	var _result_name = "";
+	var _is_disabled = false;
 	if (_has_bone_dust && _has_light_flower && _has_shadow_essence)
 	{
 		_spr_result = spr_brightflame_oil;
 		_result_name = "Brightflame Oil";
+		_is_disabled = is_full_on_upgrades();
 	}
 	else if (_has_bone_dust && _has_light_flower)
 	{
@@ -136,6 +164,7 @@ if (_recipe_changed)
 				sprite: _spr_result,
 				scale: ingredient_scale,
 				circular_frame: true,
+				is_disabled: _is_disabled,
 			}
 		);
 	}
