@@ -1,13 +1,13 @@
 global.ui_scale = 3;
 
-global.inventory_bone_dust_count = 0;
-global.inventory_light_flower_count = 0;
-global.inventory_shadow_essence_count = 0;
+global.inventory_bone_dust_count = 99;
+global.inventory_light_flower_count = 99;
+global.inventory_shadow_essence_count = 99;
 
-global.inventory_alchemists_fire_count = 0;
-global.inventory_bottled_light_count = 0;
-global.inventory_brightflame_oil_count = 0;
-global.inventory_clarity_tincture_count = 0;
+global.inventory_alchemists_fire_count = 99;
+global.inventory_bottled_light_count = 99;
+global.inventory_brightflame_oil_count = 99;
+global.inventory_clarity_tincture_count = 99;
 
 instance_create_layer(0, 0, "Instances", obj_pause);
 

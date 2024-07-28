@@ -10,9 +10,7 @@ function swing_torch()
 	{
 		_generic_attack.image_yscale *= -1;
 	}
-	var _sound = audio_play_sound(snd_torch, 10, false);
-	var _pitch_variance = random_range(0.8, 1.2);
-	audio_sound_pitch(_sound, _pitch_variance);
+	play_sound(snd_torch);
 }
 
 function throw_alchemists_fire()
@@ -20,6 +18,19 @@ function throw_alchemists_fire()
 	if (global.inventory_alchemists_fire_count <= 0) return;
 	
 	// TODO
+	
+	global.inventory_alchemists_fire_count--;
+	
+	var _alchemists_fire = instance_create_layer(
+		x,
+		y,
+		"Instances",
+		obj_alchemists_fire,
+		{
+			target_x: mouse_x,
+			target_y: mouse_y,
+		}
+	)
 }
 
 function throw_bottled_light()
