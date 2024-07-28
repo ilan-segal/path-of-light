@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_generic_attack",
-  "eventList":[],
+  "%Name":"obj_parent_pickup",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_generic_attack",
+  "name":"obj_parent_pickup",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "name":"Item",
+    "path":"folders/Objects/Item.yy",
   },
-  "parentObjectId":{
-    "name":"obj_parent_attack",
-    "path":"objects/obj_parent_attack/obj_parent_attack.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_generic_attack",
-    "path":"sprites/spr_generic_attack/spr_generic_attack.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

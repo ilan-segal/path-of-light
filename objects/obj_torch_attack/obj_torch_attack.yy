@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_parent_attack",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_torch_attack",
+  "eventList":[],
   "managed":true,
-  "name":"obj_parent_attack",
+  "name":"obj_torch_attack",
   "overriddenProperties":[],
   "parent":{
     "name":"Player",
     "path":"folders/Objects/Player.yy",
   },
   "parentObjectId":{
-    "name":"obj_shadow_clearer",
-    "path":"objects/obj_shadow_clearer/obj_shadow_clearer.yy",
+    "name":"obj_parent_attack",
+    "path":"objects/obj_parent_attack/obj_parent_attack.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_generic_attack",
+    "path":"sprites/spr_generic_attack/spr_generic_attack.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

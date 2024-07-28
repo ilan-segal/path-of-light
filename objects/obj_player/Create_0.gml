@@ -1,8 +1,8 @@
 function swing_torch()
 {
-	if (instance_exists(obj_generic_attack)) return;
+	if (instance_exists(obj_torch_attack)) return;
 
-	var _generic_attack = instance_create_layer(x, y, "ForegroundInstances", obj_generic_attack);
+	var _generic_attack = instance_create_layer(x, y, "ForegroundInstances", obj_torch_attack);
 	_generic_attack.image_angle = attack_angle;
 	_generic_attack.image_xscale = image_xscale;
 	_generic_attack.image_yscale = image_yscale;
@@ -35,7 +35,18 @@ function throw_bottled_light()
 {
 	if (global.inventory_bottled_light_count <= 0) return;
 	
-	// TODO
+	global.inventory_bottled_light_count--;
+	
+	instance_create_layer(
+		x,
+		y,
+		"Instances",
+		obj_bottled_light,
+		{
+			target_x: mouse_x,
+			target_y: mouse_y,
+		}
+	);
 }
 
 function consume_clarity_tincture()

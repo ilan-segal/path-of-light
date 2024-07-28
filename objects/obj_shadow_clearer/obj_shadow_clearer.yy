@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_parent_item",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_shadow_clearer",
+  "eventList":[],
   "managed":true,
-  "name":"obj_parent_item",
+  "name":"obj_shadow_clearer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Item",
-    "path":"folders/Objects/Item.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,

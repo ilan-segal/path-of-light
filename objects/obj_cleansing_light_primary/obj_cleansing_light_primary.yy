@@ -12,7 +12,10 @@
     "name":"Altar",
     "path":"folders/Objects/Altar.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_shadow_clearer",
+    "path":"objects/obj_shadow_clearer/obj_shadow_clearer.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
