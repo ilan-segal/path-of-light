@@ -28,3 +28,14 @@ if (x == home_x) && (y == home_y)
 {
 	i_frames--;
 }
+
+if (skull_health <= 1)
+{
+	image_index = 1;
+}
+
+if (skull_health <= 0)
+{
+	instance_destroy();
+	instance_create_layer(x, y, "Instances", obj_bone_dust);
+}
