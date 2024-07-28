@@ -80,6 +80,7 @@
     {"id":{"name":"obj_skull","path":"objects/obj_skull/obj_skull.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_play_sound","path":"scripts/scr_play_sound/scr_play_sound.yy",},},
+    {"id":{"name":"snd_clarity_tincture","path":"sounds/snd_clarity_tincture/snd_clarity_tincture.yy",},},
     {"id":{"name":"snd_enemy_death","path":"sounds/snd_enemy_death/snd_enemy_death.yy",},},
     {"id":{"name":"snd_enemy_hit","path":"sounds/snd_enemy_hit/snd_enemy_hit.yy",},},
     {"id":{"name":"snd_fireball","path":"sounds/snd_fireball/snd_fireball.yy",},},

@@ -17,11 +17,9 @@ function throw_alchemists_fire()
 {
 	if (global.inventory_alchemists_fire_count <= 0) return;
 	
-	// TODO
-	
 	global.inventory_alchemists_fire_count--;
 	
-	var _alchemists_fire = instance_create_layer(
+	instance_create_layer(
 		x,
 		y,
 		"Instances",
@@ -44,7 +42,18 @@ function consume_clarity_tincture()
 {
 	if (global.inventory_clarity_tincture_count <= 0) return;
 	
-	// TODO
+	global.inventory_clarity_tincture_count--;
+	
+	play_sound(snd_clarity_tincture);
+	sanity = clamp(sanity + clarity_tincture_heal_amount, 0, 100);
+	var _num_sparkles = 5;
+	var _spread = 10;
+	for (var _i = 0; _i < _num_sparkles; _i++)
+	{
+		var _x = x + random_range(-_spread, _spread);
+		var _y = y + random_range(-_spread, _spread);
+		effect_create_above(ef_spark, _x, _y, 0, #53E2F2);
+	}
 }
 
 function consume_brightflame_oil()

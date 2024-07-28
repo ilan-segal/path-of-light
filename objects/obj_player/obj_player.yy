@@ -58,6 +58,7 @@
     {"$GMObjectProperty":"v1","%Name":"light_flower_count","filters":[],"listItems":[],"multiselect":false,"name":"light_flower_count","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"shadow_essence_count","filters":[],"listItems":[],"multiselect":false,"name":"shadow_essence_count","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"bone_dust_count","filters":[],"listItems":[],"multiselect":false,"name":"bone_dust_count","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"clarity_tincture_heal_amount","filters":[],"listItems":[],"multiselect":false,"name":"clarity_tincture_heal_amount","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
