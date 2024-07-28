@@ -1,1 +1,1 @@
-instance_destroy(self, !obj_altar.is_activated);
+instance_destroy(self, obj_altar.activation_state != "nice");

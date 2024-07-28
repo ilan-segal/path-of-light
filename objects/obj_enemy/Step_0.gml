@@ -17,12 +17,12 @@ else
 	image_alpha = 1;
 }
 
-if (place_meeting(x + xspeed_, y, obj_enemy1))
+if (place_meeting(x + xspeed_, y, obj_enemy))
 {
 	xspeed_ = 0;
 }
 
-if (place_meeting(x, y + yspeed_, obj_enemy1))
+if (place_meeting(x, y + yspeed_, obj_enemy))
 {
 	yspeed_ = 0;
 }

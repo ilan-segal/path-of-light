@@ -1,0 +1,1 @@
+take_damage(other.tick_damage, other.x, other.y, 0);

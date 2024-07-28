@@ -5,6 +5,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_altar",
@@ -30,6 +31,14 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"is_activated","filters":[],"listItems":[],"multiselect":false,"name":"is_activated","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"activation_distance","filters":[],"listItems":[],"multiselect":false,"name":"activation_distance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"30","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"activation_state","filters":[],"listItems":[
+        "\"dormant\"",
+        "\"evil_transition \"",
+        "\"evil\"",
+        "\"good\"",
+      ],"multiselect":false,"name":"activation_state","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"dormant\"","varType":6,},
+    {"$GMObjectProperty":"v1","%Name":"evil_reveal_delay_frames","filters":[],"listItems":[],"multiselect":false,"name":"evil_reveal_delay_frames","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"60","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"evil_opacity_rate","filters":[],"listItems":[],"multiselect":false,"name":"evil_opacity_rate","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.01","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
