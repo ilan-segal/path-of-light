@@ -49,6 +49,8 @@ function vanish()
 	alarm[0] = 60;
 	var _offset = obj_shadow_cloud_0.sprite_height;
 	
+	play_sound(snd_woosh);
+	
 	spawn_shadow(x, y);
 	spawn_shadow(x + _offset, y);
 	spawn_shadow(x - _offset, y);

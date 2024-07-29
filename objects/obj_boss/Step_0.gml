@@ -6,6 +6,7 @@ if (enemy_health <= 72 && !in_phase_2)
 	move_speed = 3;
 	sprite_index = spr_boss_glow;
 	vanish();
+	play_sound(snd_mwahaha);
 }
 
 if (alarm[0] % 40 == 0 && _selected_action == 0 && alarm[0] >= 120)

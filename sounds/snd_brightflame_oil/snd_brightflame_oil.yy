@@ -7,7 +7,7 @@
   },
   "bitDepth":1,
   "bitRate":128,
-  "compression":0,
+  "compression":1,
   "conversionMode":0,
   "duration":0.652721,
   "name":"snd_brightflame_oil",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_brightflame_oil.wav",
   "type":0,
-  "volume":0.5,
+  "volume":0.22,
 }

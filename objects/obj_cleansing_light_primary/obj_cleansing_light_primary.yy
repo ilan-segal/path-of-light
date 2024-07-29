@@ -36,6 +36,7 @@
     {"$GMObjectProperty":"v1","%Name":"seconds_before_growth","filters":[],"listItems":[],"multiselect":false,"name":"seconds_before_growth","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"jobs_done","filters":[],"listItems":[],"multiselect":false,"name":"jobs_done","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"opacity_change_per_second","filters":[],"listItems":[],"multiselect":false,"name":"opacity_change_per_second","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"done_woosh","filters":[],"listItems":[],"multiselect":false,"name":"done_woosh","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

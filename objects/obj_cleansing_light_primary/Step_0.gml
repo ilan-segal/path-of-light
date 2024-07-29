@@ -6,6 +6,12 @@ if (age_seconds >= seconds_before_growth)
 {
 	image_xscale += growth_per_second * _delta_seconds;
 	image_yscale += growth_per_second * _delta_seconds;
+	
+	if (!done_woosh)
+	{
+		play_sound(snd_cleansing_light);
+		done_woosh = true;
+	}
 }
 
 jobs_done = !(instance_exists(obj_enemy) || instance_exists(obj_shadow_cloud_parent));
