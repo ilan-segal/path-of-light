@@ -4,6 +4,7 @@ if (enemy_health <= boss_max_health / 2 && !in_phase_2)
 {
 	in_phase_2 = true;
 	move_speed = 3;
+	cooldown_mod = 0.8;
 	sprite_index = spr_boss_glow;
 	vanish();
 	play_sound(snd_mwahaha);

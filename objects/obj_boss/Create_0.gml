@@ -60,7 +60,7 @@ function spawn_shadow(_x, _y)
 function vanish()
 {
 	show_debug_message("Vanishing")
-	alarm[0] = 60;
+	alarm[0] = 60 * cooldown_mod;
 	var _offset = obj_shadow_cloud_0.sprite_height;
 	
 	play_sound(snd_woosh);

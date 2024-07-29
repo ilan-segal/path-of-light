@@ -42,6 +42,7 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"boss_max_health","filters":[],"listItems":[],"multiselect":false,"name":"boss_max_health","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"288","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"in_phase_2","filters":[],"listItems":[],"multiselect":false,"name":"in_phase_2","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"cooldown_mod","filters":[],"listItems":[],"multiselect":false,"name":"cooldown_mod","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
