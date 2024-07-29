@@ -1,4 +1,3 @@
-
 function point_to_edge(_sx, _sy, _tx, _ty, _inner, _pad) {
    
 	var _vx = _tx - _sx;

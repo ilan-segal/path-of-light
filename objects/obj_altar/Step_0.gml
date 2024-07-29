@@ -6,6 +6,7 @@ switch (activation_state)
 			return;
 		}
 		activation_state = "evil_transition";
+		obj_altar_indicator.visible = false;
 		instance_create_layer(x, y, "Instances", obj_altar_glow);
 		alarm[0] = evil_reveal_delay_frames;
 		break;
@@ -27,6 +28,7 @@ switch (activation_state)
 		if !(instance_exists(obj_boss_fade_in) || instance_exists(obj_boss))
 		{
 			activation_state = "waiting";
+			obj_altar_indicator.visible = true;
 		}
 		break;
 	case "waiting":
