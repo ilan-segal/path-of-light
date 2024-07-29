@@ -5,7 +5,7 @@ if(can_collide_with_darkness)
 		y + health_bar_offset,
 		x + health_bar_length / 2,
 		y + health_bar_width + health_bar_offset,
-		sanity,
+		sanity / max_sanity * 100,
 		$FF000000 & $FFFFFF,
 		$FF0000FF & $FFFFFF,
 		$FFFFE500 & $FFFFFF,

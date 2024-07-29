@@ -1,6 +1,8 @@
+sanity = max_sanity;
+
 function swing_torch()
 {
-	if (instance_exists(obj_torch_attack)) return;
+	if (instance_exists(obj_torch_attack) || !can_swing) return;
 	
 	var _offset = 20;
 	var _angle_rad = -degtorad(attack_angle);
@@ -25,6 +27,9 @@ function swing_torch()
 		_generic_attack.image_yscale *= -1;
 	}
 	play_sound(snd_torch);
+	
+	alarm[1] = swing_cooldown;
+	can_swing = false;
 }
 
 function throw_alchemists_fire()
@@ -70,7 +75,7 @@ function consume_clarity_tincture()
 	global.inventory_clarity_tincture_count--;
 	
 	play_sound(snd_clarity_tincture);
-	sanity = clamp(sanity + clarity_tincture_heal_amount, 0, 100);
+	sanity = clamp(sanity + max_sanity * clarity_tincture_heal_percentage, 0, max_sanity);
 	var _num_sparkles = 5;
 	var _spread = 10;
 	for (var _i = 0; _i < _num_sparkles; _i++)

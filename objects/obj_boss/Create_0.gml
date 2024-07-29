@@ -6,6 +6,20 @@ _selected_action = -1;
 _previous_action = -1;
 alarm[0] = 120;
 
+enemy_health = boss_max_health;
+
+function get_health_bar_value()
+{
+	if (in_phase_2)
+	{
+		return enemy_health / (0.5 * boss_max_health) * 100;
+	}
+	else
+	{
+		return (enemy_health - (0.5 * boss_max_health)) / (0.5 * boss_max_health) * 100;
+	}
+}
+
 function take_damage(_amount, _from_x, _from_y, _knockback_speed)
 {
 	if(invuln_time > 0) return;
