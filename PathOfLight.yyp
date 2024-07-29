@@ -101,6 +101,7 @@
     {"id":{"name":"snd_cleansing_light","path":"sounds/snd_cleansing_light/snd_cleansing_light.yy",},},
     {"id":{"name":"snd_enemy_death","path":"sounds/snd_enemy_death/snd_enemy_death.yy",},},
     {"id":{"name":"snd_enemy_hit","path":"sounds/snd_enemy_hit/snd_enemy_hit.yy",},},
+    {"id":{"name":"snd_find_altar","path":"sounds/snd_find_altar/snd_find_altar.yy",},},
     {"id":{"name":"snd_fireball","path":"sounds/snd_fireball/snd_fireball.yy",},},
     {"id":{"name":"snd_mwahaha","path":"sounds/snd_mwahaha/snd_mwahaha.yy",},},
     {"id":{"name":"snd_player_hurt","path":"sounds/snd_player_hurt/snd_player_hurt.yy",},},
