@@ -3,6 +3,7 @@ event_inherited();
 if (enemy_health <= 72 && !in_phase_2)
 {
 	in_phase_2 = true;
+	move_speed = 3;
 	sprite_index = spr_boss_glow;
 	vanish();
 }
