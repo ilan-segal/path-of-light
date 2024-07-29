@@ -13,6 +13,8 @@ instance_create_layer(0, 0, "Instances", obj_pause);
 obj_player.x = room_width / 2;
 obj_player.y = room_height / 2;
 
+spawn_in_spots()
+
 spawn_in_rings(
 	obj_player.x,
 	obj_player.y,
