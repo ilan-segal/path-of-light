@@ -22,8 +22,8 @@ if (distance_covered >= distance_needed && !altar_created)
 	_altar.image_yscale = 3.222222;
 	
 	var _indicator = instance_create_layer(
-		x,
-		y,
+		camera_get_view_x(view_camera[0]),
+		camera_get_view_y(view_camera[0]),
 		"ForegroundInstances",
 		obj_altar_indicator);
 	_indicator.image_xscale = 0.5;
