@@ -17,6 +17,12 @@ else
 	image_alpha = 1;
 }
 
+if (spawn_sickness > 0)
+{
+	spawn_sickness--;
+	return;
+}
+
 if (place_meeting(x + xspeed_, y, obj_enemy))
 {
 	xspeed_ = 0;

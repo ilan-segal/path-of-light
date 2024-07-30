@@ -3,6 +3,8 @@ yspeed_ = 0;
 speed_ = move_speed;
 invuln_time = 30;
 
+play_sound(snd_enemy_spawn);
+
 function take_damage(_amount, _from_x, _from_y, _knockback_speed)
 {
 	if(invuln_time > 0) return;
