@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_bottle_landing",
+  "%Name":"snd_place_bottle",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.21712,
-  "name":"snd_bottle_landing",
+  "duration":0.230045,
+  "name":"snd_place_bottle",
   "parent":{
     "name":"Items",
     "path":"folders/Sounds/Items.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_bottle_landing.wav",
+  "soundFile":"snd_place_bottle.wav",
   "type":0,
-  "volume":0.33,
+  "volume":0.5,
 }
