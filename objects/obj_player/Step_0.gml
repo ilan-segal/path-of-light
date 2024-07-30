@@ -8,6 +8,10 @@ if(sanity <= 0)
 	}
 }
 
+//Stop at room edges
+x = clamp(x, sprite_width / 2, room_width - sprite_width / 2);
+y = clamp(y, sprite_height / 2, room_height - sprite_width / 2);
+
 if (distance_covered >= distance_needed && !altar_created)
 {
 	altar_created = true;
