@@ -107,6 +107,7 @@
     {"id":{"name":"snd_mwahaha","path":"sounds/snd_mwahaha/snd_mwahaha.yy",},},
     {"id":{"name":"snd_pickup","path":"sounds/snd_pickup/snd_pickup.yy",},},
     {"id":{"name":"snd_place_bottle","path":"sounds/snd_place_bottle/snd_place_bottle.yy",},},
+    {"id":{"name":"snd_player_die","path":"sounds/snd_player_die/snd_player_die.yy",},},
     {"id":{"name":"snd_player_hurt","path":"sounds/snd_player_hurt/snd_player_hurt.yy",},},
     {"id":{"name":"snd_torch","path":"sounds/snd_torch/snd_torch.yy",},},
     {"id":{"name":"snd_woosh","path":"sounds/snd_woosh/snd_woosh.yy",},},

@@ -15,8 +15,6 @@ function spawn_in_spots()
 				_starting_y + _i * _spot_seperation,
 				"BackgroundInstances",
 				obj_potential_altar_spot);
-			show_debug_message(_starting_x + _j * _spot_seperation);
-			show_debug_message(_starting_y + _i * _spot_seperation);
 		}
 	}
 }
