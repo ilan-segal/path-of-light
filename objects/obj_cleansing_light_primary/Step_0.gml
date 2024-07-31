@@ -7,6 +7,11 @@ if (age_seconds >= seconds_before_growth)
 	image_xscale += growth_per_second * _delta_seconds;
 	image_yscale += growth_per_second * _delta_seconds;
 	
+	if (alarm[0] == -1)
+	{
+		alarm[0] = 90;
+	}
+	
 	if (!done_woosh)
 	{
 		play_sound(snd_cleansing_light);
@@ -14,7 +19,6 @@ if (age_seconds >= seconds_before_growth)
 	}
 }
 
-jobs_done = !(instance_exists(obj_enemy) || instance_exists(obj_shadow_cloud_parent));
 if (jobs_done)
 {
 	room_goto(rm_victory_screen);
