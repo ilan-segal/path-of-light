@@ -17,10 +17,5 @@ if (age_seconds >= seconds_before_growth)
 jobs_done = !(instance_exists(obj_enemy) || instance_exists(obj_shadow_cloud_parent));
 if (jobs_done)
 {
-	image_alpha += opacity_change_per_second * _delta_seconds;
-}
-
-if (image_alpha <= 0)
-{
-	instance_destroy();
+	room_goto(rm_victory_screen);
 }

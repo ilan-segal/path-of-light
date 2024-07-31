@@ -2,7 +2,7 @@ sanity = max_sanity;
 
 function swing_torch()
 {
-	if (instance_exists(obj_torch_attack) || !can_swing) return;
+	if (instance_exists(obj_torch_attack) || !can_swing || sanity <= 0) return;
 	
 	var _offset = 20;
 	var _angle_rad = -degtorad(attack_angle);
@@ -34,7 +34,7 @@ function swing_torch()
 
 function throw_alchemists_fire()
 {
-	if (global.inventory_alchemists_fire_count <= 0) return;
+	if (global.inventory_alchemists_fire_count <= 0 || sanity <= 0) return;
 	
 	global.inventory_alchemists_fire_count--;
 	
@@ -52,7 +52,7 @@ function throw_alchemists_fire()
 
 function throw_bottled_light()
 {
-	if (global.inventory_bottled_light_count <= 0) return;
+	if (global.inventory_bottled_light_count <= 0 || sanity <= 0) return;
 	
 	global.inventory_bottled_light_count--;
 	
@@ -70,7 +70,7 @@ function throw_bottled_light()
 
 function consume_clarity_tincture()
 {
-	if (global.inventory_clarity_tincture_count <= 0) return;
+	if (global.inventory_clarity_tincture_count <= 0 || sanity <= 0) return;
 	
 	global.inventory_clarity_tincture_count--;
 	
@@ -88,7 +88,7 @@ function consume_clarity_tincture()
 
 function consume_brightflame_oil()
 {
-	if (torch_upgrades_count >= maximum_torch_upgrades) return;
+	if (torch_upgrades_count >= maximum_torch_upgrades || sanity <= 0) return;
 	
 	attack_damage += torch_damage_upgrade;
 	torch_size_multiplier += torch_size_multiplier_upgrade;
