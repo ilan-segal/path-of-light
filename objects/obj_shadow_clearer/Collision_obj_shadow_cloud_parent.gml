@@ -1,0 +1,1 @@
+instance_destroy(other, !instance_exists(obj_altar) || obj_altar.activation_state != "nice");

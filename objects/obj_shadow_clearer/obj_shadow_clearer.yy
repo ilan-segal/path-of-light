@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_shadow_clearer",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_shadow_cloud_parent","path":"objects/obj_shadow_cloud_parent/obj_shadow_cloud_parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_shadow_clearer",
   "overriddenProperties":[],

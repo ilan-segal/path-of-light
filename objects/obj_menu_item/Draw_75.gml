@@ -49,7 +49,7 @@ if (string_length(info) > 0)
 
 if (hovered && string_length(hover_text) > 0)
 {
-	var _mouse_x = window_mouse_get_x();
-	var _mouse_y = window_mouse_get_y();
+	var _mouse_x = (window_mouse_get_x()/window_get_width()) * display_get_gui_width() - window_get_x();
+	var _mouse_y = (window_mouse_get_y()/window_get_height()) * display_get_gui_height() - window_get_y();
 	draw_text_with_outline(_mouse_x, _mouse_y - 10 * scale, hover_text, 3, c_black, 16);
 }

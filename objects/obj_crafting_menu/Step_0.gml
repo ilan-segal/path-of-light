@@ -83,15 +83,13 @@ if (recipe_result_item != noone && recipe_result_item.clicked)
 	}
 	else if (recipe_result_item.sprite == spr_brightflame_oil)
 	{
-		instance_activate_object(obj_player);
-		obj_player.consume_brightflame_oil();
-		instance_deactivate_object(obj_player);
-		
+		var _mouse_x = (window_mouse_get_x()/window_get_width()) * display_get_gui_width() - window_get_x();
+		var _mouse_y = (window_mouse_get_y()/window_get_height()) * display_get_gui_height() - window_get_y();
 		if (recipe_result_item.is_disabled)
 		{
 			popup_text(
-				window_mouse_get_x(),
-				window_mouse_get_y(),
+				_mouse_x,
+				_mouse_y,
 				"Upgrade limit reached!",
 				c_red,
 			)
@@ -99,11 +97,14 @@ if (recipe_result_item != noone && recipe_result_item.clicked)
 		else
 		{
 			popup_text(
-				window_mouse_get_x(),
-				window_mouse_get_y(),
+				_mouse_x,
+				_mouse_y,
 				"+Damage +Attack Size",
 				c_lime,
 			)
+			global.attack_damage_modifier += global.attack_damage_upgrade;
+			global.attack_size_multiplier += global.attack_size_upgrade;
+			global.num_upgrades++;
 		}
 	}
 	else if (recipe_result_item.sprite == spr_clarity_tincture)

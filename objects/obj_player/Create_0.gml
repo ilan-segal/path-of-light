@@ -20,8 +20,8 @@ function swing_torch()
 		}
 	);
 	_generic_attack.image_angle = attack_angle;
-	_generic_attack.image_xscale = image_xscale * torch_size_multiplier;
-	_generic_attack.image_yscale = image_yscale * torch_size_multiplier;
+	_generic_attack.image_xscale = image_xscale * global.attack_size_multiplier;
+	_generic_attack.image_yscale = image_yscale * global.attack_size_multiplier;
 	if (attack_angle < 270 && attack_angle > 90)
 	{
 		_generic_attack.image_yscale *= -1;

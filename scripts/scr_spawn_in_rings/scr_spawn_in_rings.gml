@@ -9,6 +9,7 @@
 /// @param {real} _random_offset
 /// @param {Array<Asset.GMObject>} _objs
 /// @param {string} _layer
+/// @param {bool} _deactivate
 
 function spawn_in_rings(
 	_centre_x,
@@ -22,6 +23,8 @@ function spawn_in_rings(
 	_random_offset,
 	_objs,
 	_layer,
+	_deactivate = false,
+	_scale = 1
 ) 
 {
 	var _maximum_density_radius = lerp(_minimum_radius, _maximum_radius, _maximum_density_radius_slider);
@@ -43,12 +46,18 @@ function spawn_in_rings(
 		
 			var _j = irandom(array_length(_objs) - 1);
 			var _cur_obj = _objs[_j];
-			instance_create_layer(
+			var _instance = instance_create_layer(
 				_x,
 				_y,
 				_layer,
 				_cur_obj
 			)
+			//_instance.image_xscale = _scale;
+			//_instance.image_yscale = _scale;
+			if (_deactivate)
+			{
+				instance_deactivate_object(_instance);
+			}
 		}
 	}
 }

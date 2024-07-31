@@ -53,9 +53,7 @@ function item_is_in_crafting_circle(_sprite)
 
 function is_full_on_upgrades()
 {
-	instance_activate_object(obj_player);
-	var _result = obj_player.maximum_torch_upgrades <= obj_player.torch_upgrades_count;
-	instance_deactivate_object(obj_player);
+	var _result = global.maximum_num_upgrades <= global.num_upgrades;
 	return _result;
 }
 

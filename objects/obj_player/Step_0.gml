@@ -1,3 +1,6 @@
+instance_deactivate_object(obj_shadow_cloud_parent)
+instance_activate_region(x - 400, y - 400, x + 400, y + 400, true);
+
 if(sanity <= 0)
 {
 	// ur freaking dead kiddo
