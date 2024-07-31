@@ -29,6 +29,7 @@ switch (activation_state)
 		{
 			activation_state = "waiting";
 			obj_altar_indicator.visible = true;
+			obj_altar_indicator.age = 0;
 		}
 		break;
 	case "waiting":

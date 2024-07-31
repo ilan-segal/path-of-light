@@ -35,5 +35,6 @@ if (distance_covered >= distance_needed && !altar_created)
 		obj_altar_indicator);
 	_indicator.image_xscale = 0.5;
 	_indicator.image_yscale = 0.5;
-	play_sound(snd_find_altar, 0);
+	_indicator.image_alpha = 0;
+	//play_sound(snd_find_altar, 0);
 }

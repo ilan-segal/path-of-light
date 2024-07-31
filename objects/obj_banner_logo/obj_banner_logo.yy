@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"banner_path_of_light",
-    "path":"sprites/banner_path_of_light/banner_path_of_light.yy",
+    "name":"spr_banner_path_of_light",
+    "path":"sprites/spr_banner_path_of_light/spr_banner_path_of_light.yy",
   },
   "spriteMaskId":null,
   "visible":true,

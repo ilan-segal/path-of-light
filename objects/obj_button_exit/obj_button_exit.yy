@@ -7,7 +7,7 @@
   "managed":true,
   "name":"obj_button_exit",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},"propertyId":{"name":"text_sprite_index","path":"objects/obj_button_parent/obj_button_parent.yy",},"resource":{"name":"button_text_exit","path":"sprites/button_text_exit/button_text_exit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"button_text_exit",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},"propertyId":{"name":"text_sprite_index","path":"objects/obj_button_parent/obj_button_parent.yy",},"resource":{"name":"spr_button_text_exit","path":"sprites/spr_button_text_exit/spr_button_text_exit.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_button_text_exit",},
   ],
   "parent":{
     "name":"Menu",
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"button",
-    "path":"sprites/button/button.yy",
+    "name":"spr_button",
+    "path":"sprites/spr_button/spr_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -69,7 +69,7 @@
     {"$GMObjectProperty":"v1","%Name":"can_swing","filters":[],"listItems":[],"multiselect":false,"name":"can_swing","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"swing_cooldown","filters":[],"listItems":[],"multiselect":false,"name":"swing_cooldown","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"37","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"distance_covered","filters":[],"listItems":[],"multiselect":false,"name":"distance_covered","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"distance_needed","filters":[],"listItems":[],"multiselect":false,"name":"distance_needed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"distance_needed","filters":[],"listItems":[],"multiselect":false,"name":"distance_needed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"5","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"altar_created","filters":[],"listItems":[],"multiselect":false,"name":"altar_created","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",

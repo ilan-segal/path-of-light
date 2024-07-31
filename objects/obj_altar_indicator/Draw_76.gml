@@ -1,12 +1,12 @@
-function point_to_edge(_sx, _sy, _tx, _ty, _inner, _pad) {
+function point_to_edge(_sx, _sy, _tx, _ty, _pad) {
    
 	var _vx = _tx - _sx;
 	var _vy = _ty - _sy;
 	var _angle_to_target = -arctan2(_vy, _vx);
 	if _angle_to_target < 0 { _angle_to_target += 2 * pi }
 	
-	var _view_height = view_hport[0] - 2 * _pad;
-	var _view_width = view_wport[0] - 3 * _pad;
+	var _view_height = max(100, view_hport[0] - 2 * _pad);
+	var _view_width = max(100, view_wport[0] - 3 * _pad);
    
 	var _left = obj_player.x - _view_width / 2;
 	var _top = obj_player.y - _view_height / 2;
@@ -17,7 +17,10 @@ function point_to_edge(_sx, _sy, _tx, _ty, _inner, _pad) {
 		image_alpha = 0;
 		return;
 	}
-	image_alpha = 1;
+	else if (age > blink_duration_frames * num_blinks)
+	{
+		image_alpha = 1;
+	}
    
 	// Middle of view
 	var _mx = 0.5 * (_left + _right);
@@ -55,4 +58,4 @@ function point_to_edge(_sx, _sy, _tx, _ty, _inner, _pad) {
 	image_angle = radtodeg(_angle_to_target);
 }
 
-point_to_edge(obj_player.x, obj_player.y, obj_altar.x, obj_altar.y, 100, 150);
+point_to_edge(obj_player.x, obj_player.y, obj_altar.x, obj_altar.y, padding);
